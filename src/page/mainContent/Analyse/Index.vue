@@ -48,7 +48,7 @@
                 </div>
             </el-tab-pane>
             <el-tab-pane label="拓扑图" name="second">
-                
+                <div class="echart_radar" ref="echart3"></div>
             </el-tab-pane>
         </el-tabs>
     </div>
@@ -106,6 +106,9 @@ export default {
 
             let echart2 = this.$echarts.init(this.$refs.echart2);
             echart2.setOption(echartOption.option2)
+
+            let echart3 = this.$echarts.init(this.$refs.echart3);
+            echart3.setOption(echartOption.option3)
         },
     },
     mounted() {
@@ -173,6 +176,11 @@ export default {
             .echart {
                 height: 200px;
             }
+        }
+        .echart_radar {
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
         }
     }
 </style>
