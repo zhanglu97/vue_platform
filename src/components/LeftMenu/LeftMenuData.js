@@ -13,10 +13,6 @@ export default [
         title: '容器管理',
         icon: 'el-icon-coin'
     }, {
-        name: 'ConfigManage',//路由name
-        title: '配置管理',
-        icon: 'el-icon-menu'
-    }, {
         name: 'System',//路由name
         title: '系统信息',
         icon: 'el-icon-setting'

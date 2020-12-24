@@ -30,10 +30,5 @@ export default [
         name: 'Analyse',
         meta: {title: '概览分析'},
         component: Analyse
-    }, {
-        path: '/ConfigManage',
-        name: 'ConfigManage',
-        meta: {title: '配置管理'},
-        component: ConfigManage
-    }
+    },
 ]

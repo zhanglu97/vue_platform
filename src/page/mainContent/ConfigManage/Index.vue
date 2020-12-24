@@ -121,6 +121,11 @@ export default {
 </script>
 <style scoped lang="scss">
 @import "@/assets/style/SearchTop.scss";
+.ConfigManage {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
 .config_top_btn {
     margin-bottom: 15px;
     .list {
