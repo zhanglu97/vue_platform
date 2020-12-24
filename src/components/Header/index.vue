@@ -1,8 +1,8 @@
 <template>
     <div class="header">
-        <div class="Title_header">
-            <img class="Roms" src="@/assets/img/logo_icon.png" />
-            <span class="splite">|</span> 平台管理
+        <div class="Title_header" >
+            <img class="Roms"  style="height: 80%;margin-top: 5px" src="@/assets/img/Serverless.png" />
+            <span class="splite">|</span> ServerLess平台管理
         </div>
         <!-- 右侧按钮 -->
         <div class="header_user" >
@@ -21,7 +21,7 @@
             <div class="fold-icon" @click="setLeftMenuMin"><i :class="$store.state.leftMenuMin ? 'el-icon-s-unfold' : 'el-icon-s-fold'"></i></div>
             <div class="menuList">
                 <li v-for="(item,index) in menuList" :key="item.routeName"
-                            @click="goPage(item.routeName)" 
+                            @click="goPage(item.routeName)"
                             v-bind:class="{active:$route.name == item.routeName}"
                 >
                     {{item.name}}
@@ -49,7 +49,7 @@
                     <p class="zll-botton" @click="()=>{this.$refs.reset.setResetFormData('resetForm')}">提 交</p>
                 </template>
             </popout>
-        </div> 
+        </div>
     </div>
 </template>
 
