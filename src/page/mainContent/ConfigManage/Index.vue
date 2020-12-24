@@ -1,5 +1,8 @@
 <template>
     <div class="ConfigManage">
+        <div class="top_line">
+            <h1>配 置 管 理</h1>
+        </div>
 		<div class="config_top_btn">
             <div class="list">
 				<p class="zll-botton" @click="add()">新增配置</p>
@@ -124,10 +127,20 @@ export default {
 .ConfigManage {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 40px;
+    .top_line {
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 5px solid #efefef;
+        margin-bottom: 20px;
+        h1 {
+            text-align: center;
+            color: #3a8ee6;
+            font-weight: normal;
+        }
+    }
 }
 .config_top_btn {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     .list {
         width: 25%;
         float: left;
