@@ -229,4 +229,11 @@ export default {
         top: calc(50% - 250px);
     }
 }
+.Config_add {
+    .popout-main {
+        width: 800px;
+        height: 600px;
+        left: calc( 50% - 400px );
+    }
+}
 </style>

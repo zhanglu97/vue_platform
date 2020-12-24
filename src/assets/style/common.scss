@@ -211,6 +211,11 @@ li{
     }
 }
 //表单样式
+.Config .zll-form {
+    .el-form-item__label {
+        text-align: left;
+    }
+}
 .zll-form{
     margin-bottom: 20px;
     .el-form-item__label {
@@ -265,7 +270,10 @@ li{
     }
     .el-table th.is-leaf {
         // color: #ffffff;
-        background: #f5f5f5 !important;
+        background: #edf0f3  !important;
+    }
+    .el-table th {
+        color: #333;
     }
     .el-table td, .el-table th {
         padding: 2px 0;
@@ -274,7 +282,7 @@ li{
         height: 26px;
         line-height: 26px;
         // background: #f7f7f7;
-        // border-color: #ffffff;
+        border-color: #ffffff;
     }
     .el-table .caret-wrapper {
         height: 28px;
