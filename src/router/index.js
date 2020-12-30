@@ -5,6 +5,7 @@ Vue.use(Router)
 import page from './page' 
 import LeftMenuData from '@/components/LeftMenu/LeftMenuData' //左侧菜单数据
 import ConfigManage from '@/page/mainContent/ConfigManage/Index'
+import UseManage from '@/page/mainContent/UseManage/Index'
 
 export let getRoutePages = () => {//根据左侧菜单数据和登录状态 获取路由
     let childrenRoute = [];//登陆后能访问的子路由
@@ -31,6 +32,11 @@ export default new Router({
             name: 'ConfigManage',
             meta: {title: '配置管理'},
             component: ConfigManage
+        },  {
+            path: '/UseManage',
+            name: 'UseManage',
+            meta: {title: '应用管理'},
+            component: UseManage
         }
     ]
 })

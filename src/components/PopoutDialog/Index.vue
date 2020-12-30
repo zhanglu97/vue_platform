@@ -236,4 +236,18 @@ export default {
         left: calc( 50% - 400px );
     }
 }
+.use_add {
+    .popout-main {
+        width: 800px;
+        height: auto;
+        left: calc( 50% - 400px );
+        .bottom {
+            height: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 0;
+        }
+    }
+}
 </style>
